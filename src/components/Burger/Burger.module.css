@@ -1,0 +1,34 @@
+.Burger{
+    margin: 0;
+    width: 100%;
+    height:400px;
+    overflow: scroll;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+@media(min-width:500px) and (min-height:401px){
+    .Burger{
+        height: 450;
+        width: 400;
+    }
+}
+
+@media(min-width:500px) and (min-height:400px){
+    .Burger{
+        height: 350;
+        width: 300;
+    }
+}
+
+@media(min-width:1000px){
+    .Burger{
+        height: 400px;
+        width: 900px;
+        align-items: center;
+        margin: auto;
+    }
+}
+/*overflow: scroll if too large we can sctoll up and down*/

@@ -1,0 +1,20 @@
+.NavigationItems{
+    height: auto;
+    padding: 16px;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    list-style: none;
+}
+/* ***list-style: none revoves the bulletin*/
+
+/* for PC (above 500px)*/
+@media(min-width:500px){
+     .NavigationItems{
+         height: 100%;
+         flex-flow: row;
+         padding: 0;
+     }
+}
+   

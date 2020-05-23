@@ -1,0 +1,64 @@
+.NavigationItem{
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    display: block;
+}
+/* ***display: flex; 
+      align-items: center; 
+    prevents leaving space for link*/
+
+.NavigationItem a{
+    color:#8f5c2c;
+    text-decoration:none;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}    
+/* *** text-decoration:none; removes the underline of link  
+   ** display: block; so that the height has an effect
+*/
+
+.NavigationItem a:hover,
+.NavigationItem a:active, 
+.NavigationItem .active
+{
+    color:#40a4c8;
+}
+
+/* for PC (above 500px)*/
+@media(min-width:500px){
+
+    .NavigationItem{
+        height: 100%;
+        width: auto;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+    /* ***display: flex; 
+          align-items: center; 
+        prevents leaving space for link*/
+    
+    .NavigationItem a{
+        color:white;
+        height: 100%;
+        width: auto;
+        padding: 16px 10px;
+        border-bottom: 4px solid transparent;
+    }    
+    /* *** text-decoration:none; removes the underline of link  
+       ** display: block; so that the height has an effect
+    */
+    
+    .NavigationItem a:hover,
+    .NavigationItem a:active, 
+    .NavigationItem .active
+    {
+        color: rgb(230, 222, 230);
+        background-color:#8f5c2c;
+        border-bottom: 4px solid #40a4c8;
+    }
+    
+
+}

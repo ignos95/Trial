@@ -1,0 +1,36 @@
+.Toolbar{
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #703B09;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px ;
+    box-sizing: border-box;
+    z-index: 90;
+}
+/* display flex all th items will be aligned next to each other 
+   padding: 0(left and right) 20px(top and bottum)
+   box-sizing: border-box ensures toolbar is set correctly even with the padding 
+   z-index: 90 must be below backdrop (100) (z 0 is burger builder 100 is backdrop 500-sidedrawer 200-model) 
+*/
+
+.Toolbar Nav{
+    height: 100%;
+}
+
+.Logo{
+    height: 80%;
+}
+/* since webpack keeps different css files 
+for each components .logo is overwriten and kept in this file
+i.e now there are 3 seperate logo css (sidedrawer ,toolbar and logo itself)*/
+
+@media(max-width:499px){
+    .DesktopOnly{
+        display: none;
+    }
+}
